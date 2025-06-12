@@ -17,15 +17,6 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_s3_bucket" "terraform_state" {
-  bucket = var.bucket_name
-
-  tags = {
-    Name        = "Terraform State Bucket"
-    Environment = "Dev"
-  }
-}
-
 # Step 7 - IAM Role for Lambda
 resource "aws_iam_role" "lambda_execution_role" {
   name = "lambda_execution_role"
