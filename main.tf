@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "fara-terraform-state-bucket-2025"
+    bucket = "fara-terraform-state-bucket-2025-farangiz001"
     key    = "global/s3/terraform.tfstate"
     region = "us-east-1"
   }
