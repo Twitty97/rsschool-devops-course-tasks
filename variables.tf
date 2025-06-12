@@ -7,5 +7,5 @@ variable "region" {
 variable "bucket_name" {
   description = "Name of the S3 bucket to store Terraform state"
   type        = string
-  default     = "fara-terraform-state-bucket-2025"
+  default     = "fara-terraform-state-bucket-2025-farangiz001"
 }
