@@ -1,7 +1,3 @@
-resource "random_id" "suffix" {
-  byte_length = 4
-}
-
 terraform {
   required_providers {
     aws = {
@@ -11,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "fara-terraform-state-bucket-${random_id.suffix.hex}"
+    bucket = "fara-terraform-state-bucket-2025"
     key    = "global/s3/terraform.tfstate"
     region = "us-east-1"
   }
