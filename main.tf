@@ -57,11 +57,11 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
 
 # Step 8 - Lambda Function
 resource "aws_lambda_function" "example_lambda" {
-  function_name = "example_lambda"
-  role          = aws_iam_role.lambda_execution_role.arn
-  handler       = "lambda_function.lambda_handler"
-  runtime       = "python3.12"
-  filename      = "lambda_function_payload.zip"
+  function_name    = "example_lambda"
+  role             = aws_iam_role.lambda_execution_role.arn
+  handler          = "lambda_function.lambda_handler"
+  runtime          = "python3.12"
+  filename         = "lambda_function_payload.zip"
   source_code_hash = filebase64sha256("lambda_function_payload.zip")
 
   tags = {
