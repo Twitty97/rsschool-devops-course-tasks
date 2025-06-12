@@ -38,7 +38,7 @@
 
 ### 4. ⚙️ GitHub Actions Workflow
 - Link to successful run (push or PR):  
-  [GitHub Actions Run](https://github.com/Twitty97/rsschool-devops-course-tasks/actions/runs/15622123735)
+  [GitHub Actions Run](https://github.com/Twitty97/rsschool-devops-course-tasks/actions/runs/15622578538)
 
 - Jobs included:
   - [x] `terraform-check`
